@@ -1,25 +1,25 @@
-PImage snoopy;
-float targetX;
-float distX;
-float targetY;
-float distY;
-float easing=.05;
-float x;
-float y;
-
-void setup(){
- size(500,500); 
- snoopy=loadImage("snoopy2.bmp");
-}
-
-void draw(){
-  background(255);
-  image(snoopy,x-100,y-150,200,250);
-  targetX=mouseX;
-  distX=targetX-x;
-  x+=distX*easing;
-   targetY=mouseY;
-  distY=targetY-y;
-  y+=distY*easing;
-}
+   PImage snoopy;
+   float targetX;
+   float distX;
+   float targetY;
+   float distY;
+   float easing=.05;
+   float x;
+   float y;
+   
+   void setup(){
+    size(500,500); 
+    snoopy=loadImage("snoopy2.bmp");
+   }
+   
+   void draw(){
+     background(255);
+     image(snoopy,x-100,y-150,200,250);
+     targetX=mouseX;
+     distX=targetX-x;
+     x+=distX*easing;
+      targetY=mouseY;
+     distY=targetY-y;
+     y+=distY*easing;
+   }
 
